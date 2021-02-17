@@ -9,10 +9,12 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
         android:layout_marginTop="70dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/icon"
+        tools:srcCompat="@drawable/icon" />
 
     <TextView
         android:id="@+id/textView"
@@ -27,15 +29,19 @@
         android:id="@+id/LoginEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left"
         android:layout_marginTop="100dp"
+        android:layout_marginEnd="@dimen/margin_Right"
         android:ems="10"
         android:hint="Username/Email"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/PasswordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_Right"
         android:ems="10"
         android:hint="Passowrd"
         android:inputType="textPassword" />
@@ -44,8 +50,12 @@
         android:id="@+id/logINButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left"
         android:layout_marginTop="60dp"
+        android:layout_marginEnd="@dimen/margin_Right"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/button_shape"
+        android:onClick="onLoginButtonClick"
         android:text="LOG IN" />
 
     <TextView
@@ -53,6 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="bottom|center"
+        android:onClick="onsignupButtonClick"
         android:text="Register Here"
         android:textSize="18sp" />
 

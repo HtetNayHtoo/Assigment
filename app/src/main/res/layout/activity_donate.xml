@@ -26,67 +26,68 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/realnameEditTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/margin_Right"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/phoneEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left"
         android:layout_marginTop="10dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress" />
-
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/margin_Right"
         android:ems="10"
         android:hint="Phone"
         android:inputType="phone" />
 
     <EditText
-        android:id="@+id/editTextTime"
+        android:id="@+id/aptimeEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/margin_Right"
         android:ems="10"
-        android:hint="Time"
+        android:hint="1 AM/1PM"
         android:inputType="time" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/dateEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/margin_Right"
         android:ems="10"
-        android:hint="Date"
+        android:hint="01/01/2021"
         android:inputType="date" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left">
 
         <RadioGroup
+            android:id="@+id/genderRadioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/radioButton7"
+                android:id="@+id/maleRadioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Male" />
 
             <RadioButton
-                android:id="@+id/radioButton8"
+                android:id="@+id/femaleRadioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Female" />
@@ -95,19 +96,33 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/btypeEdittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/margin_Right"
         android:ems="10"
         android:hint="Blood Type"
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/apButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_left"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/margin_Right"
+        android:background="@drawable/button_shape"
+        android:onClick="onapButtonClick"
         android:text="Appointment" />
+
+    <TextView
+        android:id="@+id/BTM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="btmClick"
+        android:text="Back To Main" />
 
 </LinearLayout>
