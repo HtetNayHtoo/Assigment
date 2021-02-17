@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Assigment</string>
+
+    <string-array name="HospitalNames">
+        <item>KANDAWGYI</item>
+        <item>YANGON UNIVERSITY HOSPITAL</item>
+        <item>SAKURA</item>
+        <item>AUNG YADANAR</item>
+    </string-array>
+
+    <string-array name="Address">
+        <item>30/30 KANDAW GYI STREET </item>
+        <item>20 STREET Downtwon</item>
+        <item>21/40 UWISARA STREET</item>
+        <item>319 SOUTH OKKALAPA| PARAMI STREET</item>
+    </string-array>
+
+    <string-array name="ContactNumber">
+        <item>09xxxxxxx</item>
+        <item>01xxxxxxx</item>
+        <item>09xxxxxxx</item>
+        <item>01xxxxxxx</item>
+    </string-array>
+
 </resources>
