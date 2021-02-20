@@ -67,11 +67,11 @@ public class Donateplacelist extends AppCompatActivity {
     }
 
     public void onLogoutButtonClick(View view){
+        FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(this, MainActivity.class));
     }
 
     public void onDonateClick(View view){
-        FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(this,Donate.class));
     }
 }

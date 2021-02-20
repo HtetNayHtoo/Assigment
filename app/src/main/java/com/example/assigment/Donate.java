@@ -1,8 +1,10 @@
 package com.example.assigment;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -39,6 +41,17 @@ public class Donate extends AppCompatActivity {
         donateDatabase = FirebaseDatabase.getInstance();
     }
 
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE){
+            setContentView(R.layout.activity_donate);
+        }else if(newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+            setContentView(R.layout.activity_donate);
+        }
+    }
+
     public void onapButtonClick(View view){
         String realname= realnameEditTextView.getText().toString();
         String phone= phoneEditText.getText().toString();
@@ -73,6 +86,7 @@ public class Donate extends AppCompatActivity {
              donateRef.child("Gender").setValue(gender);
              donateRef.child("BloodType").setValue(btype);
              Toast.makeText(this,"Thank you for your Donation!", Toast.LENGTH_LONG).show();
+             startActivity(new Intent(this,Donateplacelist.class));
         }
     }
 
